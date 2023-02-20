@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="dark light" />
+        <meta name="author about" content="PspaceIT"/>
+        <meta name="description about" content="This is an example page to demonstrate usage of metadata on web pages."/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HTML Reminder -- Table elements</title>
+         <style>
+            td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <h1><q>PSpace IT</q></h1>
+        <hr/>
+        <h3>HTML Reminder -- Table elements</h3>
+        <p style="color: red">&lt;table&gt;, &lt;tr&gt;, &lt;td&gt; elements
+        </p>
+        <table style="border: 1px solid black;">
+            <tr>
+                <td>Year</td>
+                <td>Group</td>
+                <td>Language</td>
+                <td>Done</td>
+                <td>Passed</td>
+            </tr>
+            <tr>
+                <td rowspan="5">2022</td>
+                <td rowspan="2">Elzero</td>
+                <td>HTML</td>
+                <td colspan="2">Yes</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td colspan="2">Yes</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Heroes</td>
+                <td>JS</td>
+                <td>Yes</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td colspan="2">Yes</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+        </table> 
+        
+        <br>
+        <p style="color: red">&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt; elements
+        </p>
+        <table>
+            <tr>
+                <th id="name">Name</th>
+                <th id="email">Email</th>
+                <th id="phone">Phone</th>
+                <th id="addr">Address</th>
+            </tr>
+            <tr>
+                <td headers="name">Patoo BOUAZIZI</td>
+                <td headers="email">PSpaceIT@example.com</td>
+                <td headers="phone">+45342323</td>
+                <td headers="addr">Matir 301,7030 Bizerta,TN</td>
+            </tr>
+        </table>
+        <br>
+        <p style="color: red">&lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt; elements
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$80</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Sum</td>
+                    <td>$180</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <p style="color: red">&lt;table&gt;, &lt;colgroup&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt; elements
+        </p>
+        <table>
+            <colgroup>
+                <col span="2" style="background-color:red">
+                <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>3476896</td>
+                <td>My first HTML</td>
+                <td>$53</td>
+            </tr>
+            <tr>
+                <td>5869207</td>
+                <td>My first CSS</td>
+                <td>$49</td>
+            </tr>
+        </table>
+        
+        <hr/>
+        <p style="color:green">
+            <b style="font-size:20px">Note:</b> Press <kbd>Ctrl</kbd> + <kbd>U</kbd> to view source code.
+        </p> 
+    </body>
+</html>
